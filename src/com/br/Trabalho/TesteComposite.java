@@ -11,7 +11,8 @@ public class TesteComposite {
 		Gerente diretorComercial = new Gerente("Janaina", "Diretora Comercial", 5500, 20, 12300);
 		Gerente diretorProducao = new Gerente("Maria", "Diretor Produção", 4000);
 		Funcionario func1 = new Funcionario("Isabella", "Vendedora", 3000, 8,16400);
-		Funcionario func2 = new Funcionario("Jacqueline","Vendedora", 2500, 10, 8900);
+		//Funcionario func2 = new Funcionario("Jacqueline","Vendedora", 2500, 10, 8900);
+		Gerente diretorComer2 = new Gerente("Jacqueline","Diretora Comercial", 2500, 10, 8900);
 		
 		Funcionario func3 = new Funcionario("Vinicius", "Desenvolvedor", 2500);
 		Funcionario func4 = new Funcionario("Antonio","Desenvolvedor", 1500);
@@ -25,7 +26,7 @@ public class TesteComposite {
 
 		// subordinado do diretor comercial
 		diretorComercial.incluirSubordinado(func1);
-		diretorComercial.incluirSubordinado(func2);
+		diretorComercial.incluirSubordinado(diretorComer2);
 
 		// subodrinado do diretor produção
 		diretorProducao.incluirSubordinado(func3);

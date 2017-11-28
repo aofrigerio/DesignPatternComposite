@@ -9,8 +9,9 @@ public class Gerente implements IHierarquia {
 
 	private String nome;
 	private String setor;
-	private int comissao;
 	private int salario_bruto;
+	
+	private int comissao;
 	private int totVendas;
 	private List<IHierarquia> subordinados;
 
@@ -54,6 +55,7 @@ public class Gerente implements IHierarquia {
 			salario_final = salario_final + ((totVendas * this.comissao ) / 100 );
 		}
 
+		
 		// return salario_final;
 		return salario_final;
 	}
